@@ -1,7 +1,32 @@
-QHangups
+QHangups-OSX
 ========
 
-Alternative client for Google Hangouts written in PyQt
+Client for Google Hangouts written in PyQt. Now optimized for OSX!
+
+Changes from QHangups
+----------------------
+
+- Updated UI to match browser hangouts client
+- Notification support
+- Fix menubar icon (option-click to show items, click to hide/show)
+- Always on top window to match old panels hangouts chrome extension
+
+Installation
+------------
+
+``brew install qt5 --with-qtwebkit``
+``brew install PyQt5``
+``brew install python3``
+
+``cd [downloaded directory]``
+``python3 setup.py build``
+``python3 setup.py install``
+``easy_install ./dist/QHangups-1.8.1-py3.5.egg`
+
+BONUS:
+
+The ./Application/dist` folder holds a app built with py2applet that launches qhangups after it's been installed through easy_install.
+
 
 Requirements
 ------------
