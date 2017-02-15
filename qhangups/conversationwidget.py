@@ -1,6 +1,7 @@
 import datetime, asyncio, logging
 
 from PyQt5 import QtCore, QtGui, QtWidgets, QtWebKitWidgets
+from pync import Notifier
 
 import hangups
 from hangups.ui.utils import get_conv_name
@@ -501,6 +502,7 @@ class QHangupsConversationWidget(QtWidgets.QWidget, Ui_QHangupsConversationWidge
         # Update the count of unread messages.
         if not user.is_self and set_unread and not self.is_current():
             print("TESTTEST")
+            Notifier.notify('Hello World', title='Python')
             self.num_unread_local += 1
 
     def handle_rename(self, conv_event, user, prepend=False):
